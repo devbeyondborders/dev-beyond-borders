@@ -7,6 +7,9 @@
 
   <!-- SEO -->
   <meta name="description" content="Mentoria para desenvolvedores que querem conquistar vagas internacionais em tecnologia.">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <style>
     body {
@@ -53,6 +56,59 @@
       border: 1px solid #3B82F6;
     }
 
+    .btn-primary {
+      background: linear-gradient(135deg, #22C55E, #3B82F6);
+      border: none;
+      box-shadow: 0 8px 25px rgba(59,130,246,.35);
+      font-size: 18px;
+      padding: 18px 34px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+
+    .mentoring-banner {
+      margin-top: 35px;
+      background: #121826;
+      border: 1px solid rgba(59,130,246,.3);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .mentoring-banner h3 {
+      margin-top: 0;
+      color: #38BDF8;
+    }
+
+    .mentoring-banner p {
+      margin-bottom: 15px;
+    }
+
+    .social-links {
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 28px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #38BDF8;
+    }
+
     .grid {
       display: grid;
       gap: 20px;
@@ -84,6 +140,45 @@
         grid-template-columns: 1fr 1fr 1fr;
       }
     }
+
+    .logo {
+      max-width: 500px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-disabled {
+      background: #374151;
+      color: #9CA3AF;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 28px;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #38BDF8;
+    }
   </style>
 </head>
 
@@ -92,22 +187,66 @@
 <div class="container">
 
   <!-- HERO -->
+  <div class="hero">
+
+  <img
+    src="assets/logo.png"
+    alt="Dev Beyond Borders"
+    class="logo"
+  >
+
   <h1>Conquiste sua vaga internacional em tecnologia</h1>
-  <p>Mentoria prática para engenheiros de software e profissionais de dados que querem trabalhar para empresas do exterior e receber em dólar.</p>
 
-  <a href="https://forms.gle/o6cPrrdTvJ8rXC9j7" class="btn">Aplicar para a Mentoria</a>
-  <a href="https://calendly.com/devbeyondborders" class="btn btn-secondary">Agendar Career Call</a>
+  <p>
+    Mentoria prática para engenheiros de software e profissionais de dados
+    que querem trabalhar para empresas do exterior e receber em dólar.
+  </p>
 
-  <p>+10 anos de experiência | Ex-entrevistador técnico | Experiência global</p>
+  <div class="hero-buttons">
 
-  <!-- PARA QUEM -->
-  <h2>Para quem é</h2>
-  <div class="grid grid-2">
-    <div class="card">Profissionais com 2+ anos de experiência</div>
-    <div class="card">Quer vaga internacional</div>
-    <div class="card">Já tentou aplicar sem sucesso</div>
-    <div class="card">Quer aumentar salário</div>
+    <a href="#"
+       class="btn">
+       Começar pelo Mini Curso
+    </a>
+
+    <a href="#"
+       class="btn btn-secondary btn-disabled">
+       Career Call (Em Breve)
+    </a>
+
   </div>
+
+    <div class="mentoring-banner">
+
+    <h3>🌎 Quer acompanhamento personalizado?</h3>
+
+    <p>
+      A Mentoria Dev Beyond Borders oferece revisão de currículo,
+      otimização de LinkedIn, mock interviews e acompanhamento
+      individual para acelerar sua busca por oportunidades internacionais.
+    </p>
+
+    <a href="https://forms.gle/o6cPrrdTvJ8rXC9j7"
+      class="btn btn-secondary">
+      Conhecer a Mentoria Premium
+    </a>
+
+  </div>
+
+  <div class="social-links">
+
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+  </div>
+
+  <p>
+    +10 anos de experiência |
+    Ex-entrevistador técnico |
+    Experiência global
+  </p>
+
+</div>
 
   <!-- PROBLEMA -->
   <h2>O problema</h2>
@@ -161,7 +300,27 @@
 
   <!-- CTA FINAL -->
   <h2>Pronto para competir globalmente?</h2>
-  <a href="https://forms.gle/o6cPrrdTvJ8rXC9j7" class="btn">Aplicar agora</a>
+
+  <p>
+  Comece pelo treinamento Rota Global Tech e aprenda a estratégia
+  utilizada por profissionais que conquistam oportunidades
+  internacionais.
+  </p>
+
+  <a href="#"
+    class="btn btn-primary">
+    Acessar o Mini Curso
+  </a>
+
+  <p style="margin-top:20px;">
+  Ou, se preferir um acompanhamento personalizado:
+  </p>
+
+  <a href="https://forms.gle/o6cPrrdTvJ8rXC9j7"
+    class="btn btn-secondary">
+    Mentoria Premium
+  </a>
+  
 
   <!-- FAQ -->
   <h2>FAQ</h2>
