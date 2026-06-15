@@ -182,6 +182,7 @@
   </style>
 </head>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18241630901"></script>
 <body>
 
 <div class="container">
@@ -204,8 +205,9 @@
 
   <div class="hero-buttons">
 
-    <a href="https://devbeyondborders.hotmart.host/rota-global-tech-6b829a40-3b1f-41f4-8545-1bd621fd03c1"
-       class="btn">
+    <a href="#"
+       class="btn btn-primary"
+       onclick="return trackCourseClick('https://devbeyondborders.hotmart.host/rota-global-tech-6b829a40-3b1f-41f4-8545-1bd621fd03c1');">
        Começar pelo Mini Curso
     </a>
 
@@ -307,10 +309,11 @@
   internacionais.
   </p>
 
-  <a href="https://devbeyondborders.hotmart.host/rota-global-tech-6b829a40-3b1f-41f4-8545-1bd621fd03c1"
-    class="btn btn-primary">
-    Acessar o Mini Curso
-  </a>
+  <a href="#"
+       class="btn btn-primary"
+       onclick="return trackCourseClick('https://devbeyondborders.hotmart.host/rota-global-tech-6b829a40-3b1f-41f4-8545-1bd621fd03c1');">
+       Acessar o Mini Curso
+    </a>
 
   <p style="margin-top:20px;">
   Ou, se preferir um acompanhamento personalizado:
@@ -335,6 +338,33 @@
   </footer>
 
 </div>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18241630901');
+
+  function trackCourseClick(url) {
+
+    var callback = function () {
+
+        if (typeof(url) !== 'undefined') {
+            window.location = url;
+        }
+
+    };
+
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18241630901/a8gUCJOMub8cELXlpPpD',
+        'event_callback': callback
+    });
+
+    return false;
+  }
+
+</script>
 
 </body>
 </html>
